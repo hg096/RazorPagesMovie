@@ -14,12 +14,12 @@
         <form method="post">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
-                <label asp-for="Movie.Title" class="control-label"></label>
+                <label asp-for="Movie.Title" class="control-label">제목</label>
                 <input asp-for="Movie.Title" class="form-control" />
                 <span asp-validation-for="Movie.Title" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Movie.ReleaseDate" class="control-label"></label>
+                <label asp-for="Movie.ReleaseDate" class="control-label">작성일</label>
                 <input asp-for="Movie.ReleaseDate" class="form-control" />
                 <span asp-validation-for="Movie.ReleaseDate" class="text-danger"></span>
             </div>
@@ -29,19 +29,19 @@
                 <span asp-validation-for="Movie.Genre" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Movie.Price" class="control-label"></label>
+                <label asp-for="Movie.Price" class="control-label">가격</label>
                 <input asp-for="Movie.Price" class="form-control" />
                 <span asp-validation-for="Movie.Price" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
+                <input type="submit" value="작성" class="btn btn-primary" />
             </div>
         </form>
     </div>
 </div>
 
 <div>
-    <a asp-page="Index">Back to List</a>
+    <a asp-page="Index">뒤로가기</a>
 </div>
 
 @section Scripts {
